@@ -8,9 +8,10 @@ install:
   - npm install
   - npm install codecov -g
 
-script:
+scripts:
   - npm run test
-  - codecov --token=$CODECOV_TOKEN
   - npm run build
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
   - npm publish
+after_success:
+  - codecov --token=$CODECOV_TOKEN

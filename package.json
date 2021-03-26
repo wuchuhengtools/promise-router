@@ -1,7 +1,7 @@
 {
   "name": "@wuchuhengtools/promise-router",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Very small library that parse the route and return promise",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

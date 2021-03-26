@@ -1,5 +1,5 @@
-const router = (route: string, url: string): Promise<Main.RouterResType> => {
-   return new Promise<Main.RouterResType>((resolve, reject) => {
+const router = (route: string, url: string): Promise<MainFunction.RouterResType> => {
+   return new Promise<MainFunction.RouterResType>((resolve, reject) => {
        const regex = /:([^\/]+)/gm;
        let m;
        type KeywordsType = Array<string>
@@ -9,8 +9,11 @@ const router = (route: string, url: string): Promise<Main.RouterResType> => {
        }
        route = route.replace(/\//g, '\\\/');
        route = route.replace(/:[^\/|^\\]+/g, '([^\\\/|^\\?]+)')
-       const routePreg = new RegExp(route, 'i')
-       if (!routePreg.test(url)) reject()
+       const rule = `^${route}$`
+       const routePreg = new RegExp(rule, 'i')
+       if (!routePreg.test(url)) {
+           return reject("the route was't matched")
+       }
        m = routePreg.exec(url) as Array<string>
        const res : Record<string,string> = {};
        m.slice(1).forEach((e, i) => {

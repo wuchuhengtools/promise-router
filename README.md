@@ -1,6 +1,7 @@
 <h1 align="center"> 路由解析器 </h1>
 
 [![Build Status](https://travis-ci.org/wuchuhengtools/promise-router.svg?branch=master)](https://travis-ci.org/wuchuhengtools/promise-router)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router?ref=badge_shield)
 
 ## Installing
 
@@ -30,3 +31,5 @@ _The code contribution process is not very formal. You just need to make sure th
 ## License
 
 MIT
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router?ref=badge_large)

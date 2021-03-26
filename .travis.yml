@@ -4,14 +4,12 @@ node_js:
 env:
   - NPM_TOKEN=${{NPM_TOKEN}}
   - CODECOV_TOKEN=${{COVER_TOKEN}}
+
 install:
   - npm install
-  - npm install codecov -g
-
 scripts:
   - npm run test
-  - npm run build
-  - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-  - npm publish
-after_success:
-  - codecov --token=$CODECOV_TOKEN
+  - npx codecov --token=$CODECOV_TOKEN
+#  - npm run build
+#  - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+#  - npm publish

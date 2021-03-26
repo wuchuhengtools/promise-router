@@ -1,7 +1,7 @@
 {
   "name": "@wuchuhengtools/promise-router",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.13",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,10 +15,18 @@
     "type": "git",
     "url": "git+https://github.com/wuchuhengtools/promise-router"
   },
-  "keywords": ["router"],
+  "keywords": [
+    "router"
+  ],
   "author": "wuchuheng",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.2.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@wuchuhengtools/promise-router": "^0.0.12"
   }
 }

@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 15.2.0
+env:
+  - NPM_TOKEN=${{NPM_TOKEN}}
+install:
+  - npm install
+
+script:
+  - npm run build
+  - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+  - npm publish

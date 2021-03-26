@@ -1,5 +1,7 @@
 <h1 align="center"> 路由解析器 </h1>
 
+[![Build Status](https://travis-ci.org/wuchuhengtools/promise-router.svg?branch=master)](https://travis-ci.org/wuchuhengtools/promise-router)
+
 ## Installing
 
 ```shell
@@ -12,7 +14,7 @@ $ npm i @wuchuhengtools/promise-router
 import router from '@wuchuhengtools/promise-router'
 // ...
 router('/me/devices/:id/files/:fileId', '/me/devices/11111/files/22222').then(e => {
-    console.log(e)
+    console.log(e) // { "routeParams": { "id": "sdfasdfadsfasd", "fileId": "22222" } 
 })
 ```
 ## Contributing

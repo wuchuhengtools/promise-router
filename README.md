@@ -1,6 +1,8 @@
 <h1 align="center"> 路由解析器 </h1>
 
 [![Build Status](https://travis-ci.org/wuchuhengtools/promise-router.svg?branch=master)](https://travis-ci.org/wuchuhengtools/promise-router)
+[![codecov](https://codecov.io/gh/wuchuhengtools/promise-router/branch/master/graph/badge.svg?token=EDF42SJ22M)](https://codecov.io/gh/wuchuhengtools/promise-router)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwuchuhengtools%2Fpromise-router?ref=badge_shield)
 
 ## Installing
 
